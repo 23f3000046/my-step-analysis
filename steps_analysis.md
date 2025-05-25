@@ -46,7 +46,7 @@ Maintain 9,000 daily step average
 Beat my friend Sarah's weekly total
 
 Friend Comparison
-I was ~~last~~ third in my friend group this week!
+~~text~~ I was ~~last~~ third in my friend group this week!
 
 Visit My Fitness Dashboard to see more detailed analytics.
 
