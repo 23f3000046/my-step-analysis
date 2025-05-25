@@ -1,9 +1,3 @@
----
-
-### Full Corrected Markdown:
-Here's your complete submission with the SQL block added (I replaced the CSS section):
-
-```markdown
 # My Weekly Step Tracking Analysis
 
 ## Overview
@@ -24,21 +18,21 @@ Below is a summary of my *daily step count* for the past week:
 | Sunday    | 5,678  | No       |
 
 ```sql
--- Required SQL analysis of step data
+-- Required SQL analysis
 SELECT 
     day,
     steps,
     CASE WHEN steps >= 8000 THEN 'Yes' ELSE 'No' END AS goal_met
-FROM weekly_steps
-WHERE week = 'current';
-Weekly Comparison
-Comparing this week to previous weeks:
+FROM weekly_steps;
+Strikethrough Example <!-- NEW SECTION -->
+My initial goal was ~~10,000~~ steps daily, but I revised it to 8,000 after realizing this was too ambitious.
 
+Weekly Comparison
 Week 1: 52,468 steps
 
 Week 2: 58,926 steps
 
-Week 3: 60,926 steps (current week)
+Week 3: 60,926 steps(current week)
 
 Progress Tracking
 My fitness goals:
