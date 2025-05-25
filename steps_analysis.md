@@ -57,4 +57,4 @@ Personal Insights
 Walking more on weekends significantly boosts my weekly averages. I should focus on maintaining consistency throughout the week rather than relying on weekend activity spikes.
 
 Technical Notes
-The step data is processed using the calculateAverage() function in our analytics system.
+The step data is processed using the `calculateAverage()` function in our analytics system.
