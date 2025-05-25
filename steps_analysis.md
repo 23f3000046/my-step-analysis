@@ -24,15 +24,15 @@ SELECT
     steps,
     CASE WHEN steps >= 8000 THEN 'Yes' ELSE 'No' END AS goal_met
 FROM weekly_steps;
-Strikethrough Example <!-- NEW SECTION -->
-My initial goal was ~~10,000~~ steps daily, but I revised it to 8,000 after realizing this was too ambitious.
+Goal Adjustment
+My initial goal was 10,000 steps daily, but I revised it to 8,000 after realizing this was too ambitious.
 
 Weekly Comparison
 Week 1: 52,468 steps
 
 Week 2: 58,926 steps
 
-Week 3: 60,926 steps(current week)
+Week 3: 60,926 steps (current week)
 
 Progress Tracking
 My fitness goals:
@@ -46,7 +46,7 @@ Maintain 9,000 daily step average
 Beat my friend Sarah's weekly total
 
 Friend Comparison
-~~text~~ I was ~~last~~ third in my friend group this week!
+I was last I was third in my friend group this week!
 
 Visit My Fitness Dashboard to see more detailed analytics.
 
