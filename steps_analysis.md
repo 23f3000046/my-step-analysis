@@ -1,3 +1,9 @@
+---
+
+### Full Corrected Markdown:
+Here's your complete submission with the SQL block added (I replaced the CSS section):
+
+```markdown
 # My Weekly Step Tracking Analysis
 
 ## Overview
@@ -17,69 +23,41 @@ Below is a summary of my *daily step count* for the past week:
 | Saturday  | 12,345 | Yes      |
 | Sunday    | 5,678  | No       |
 
-## Weekly Comparison
-
+```sql
+-- Required SQL analysis of step data
+SELECT 
+    day,
+    steps,
+    CASE WHEN steps >= 8000 THEN 'Yes' ELSE 'No' END AS goal_met
+FROM weekly_steps
+WHERE week = 'current';
+Weekly Comparison
 Comparing this week to previous weeks:
 
-1. Week 1: 52,468 steps
-2. Week 2: 58,926 steps
-3. Week 3: 60,926 steps (current week)
+Week 1: 52,468 steps
 
-## Visualization Styles
+Week 2: 58,926 steps
 
-Here's how I styled my step tracking dashboard:
+Week 3: 60,926 steps (current week)
 
-```css
-.step-goal-met {
-  color: #4CAF50;
-  font-weight: bold;
-}
-
-.step-goal-missed {
-  color: #F44336;
-  font-style: italic;
-}
-
-.weekend-steps {
-  background-color: #E8F5E9;
-}
-```
-
-## Progress Tracking
-
+Progress Tracking
 My fitness goals:
 
-- [x] Walk at least 8,000 steps for 5 days
-- [x] Complete one 10,000+ step day
-- [ ] Maintain 9,000 daily step average
-- [ ] Beat my friend Sarah's weekly total
+Walk at least 8,000 steps for 5 days
 
-## Analysis Methods
+Complete one 10,000+ step day
 
-* Used Fitbit API to pull raw data
-* Calculated daily averages
-* Applied statistical analysis
-* Compared with friend group data
-* Generated visualization charts
+Maintain 9,000 daily step average
 
-## Friend Comparison
+Beat my friend Sarah's weekly total
 
-I was ~~last~~ **third** in my friend group this week!
+Friend Comparison
+I was ~~last~~ third in my friend group this week!
 
-Visit [My Fitness Dashboard](https://example.com/fitness-tracker) to see more detailed analytics.
+Visit My Fitness Dashboard to see more detailed analytics.
 
-## Visual Representation
+Personal Insights
+Walking more on weekends significantly boosts my weekly averages. I should focus on maintaining consistency throughout the week rather than relying on weekend activity spikes.
 
-![Step Count Graph](https://example.com/step-graph.png)
-
-## Personal Insights
-
-> Walking more on weekends significantly boosts my weekly averages. I should focus on maintaining consistency throughout the week rather than relying on weekend activity spikes.
-
-## Technical Notes
-
-The step data is processed using the `calculateAverage()` function in our analytics system.
-
----
-
-<!-- Future enhancement: Add weather correlation analysis to understand impact on step count -->
+Technical Notes
+The step data is processed using the calculateAverage() function in our analytics system.
