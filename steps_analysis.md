@@ -1,7 +1,10 @@
 # My Weekly Step Tracking Analysis
 
 ## Overview
-This document presents an **analysis** of my daily steps over the past week, comparing my activity patterns over time and with friends.
+This document presents an **analysis** of my daily steps over the past week, comparing my activity patterns over time and with friends.\
+
+
+~~Strikethrough~~
 
 ## Daily Step Counts
 
